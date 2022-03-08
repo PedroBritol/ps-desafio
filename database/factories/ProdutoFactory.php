@@ -23,7 +23,7 @@ class ProdutoFactory extends Factory
       'price' => $this->faker->randomNumber(6, false),
       'description' => $this->faker->text(),
       'amount' => $this->faker->randomNumber(2, false),
-      'photo' => ' ',
+      'photo' => '',
     ];
   }
 }
