@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\NacionalidadeController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,9 @@ Route::middleware('locale')->group(function () {
     Route::get('/', function () {
         return redirect()->route('dashboard');
     });
-
+    //ROTAS PARA O SITE
+    Route::any('produtos', [SiteController::class, 'index'])->name('site.index');
+    
     Auth::routes();
 
     Route::middleware('auth')->group(function () {

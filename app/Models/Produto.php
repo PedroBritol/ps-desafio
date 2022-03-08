@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Categoria;
-
+use Illuminate\Support\Str;
 class Produto extends Model
 {
     use HasFactory;
@@ -18,4 +18,10 @@ class Produto extends Model
     {
         return $this->belongsTo(Categoria::class);
     }
+
+    public function getTitleShortAttribute()
+    {
+        return Str::limit($this->description ?? '', 180,'...');
+    }
+    
 }
