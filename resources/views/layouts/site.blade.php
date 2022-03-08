@@ -16,7 +16,7 @@
             <ul>
                 
                 
-                <li><a href="{{route('site.index')}}"> <img src="{{ asset('imagens/menu.png') }}" alt="menu icon" class="menu">Página Inicial</a></li>
+                <li><a href="{{route('site.index')}}"> <img src="{{ asset('imagens/menu.png') }}" alt="menu icon" class="menu">PÁGINA INICIAL</a></li>
                 
             </ul>
             
