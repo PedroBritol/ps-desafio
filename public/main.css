@@ -162,7 +162,18 @@ nav ul li a:hover{
 }
 .nav-form{
     padding-right: 2%;
+    
 
+}
+.botao{
+    
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#categoria_id{
+    margin: 0 2px;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 
