@@ -7,7 +7,7 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
 }
 header{
     width: 100%;
@@ -40,9 +40,10 @@ nav ul li a{
     background-color: #363636;
     font-size: 20px;
     text-decoration: none;
-    font-family:'Roboto', sans-serif;
-    color: black
-    
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    align-items: center;
+    justify-content: center;
 }
 nav ul li a:hover{
     color: #696969;
@@ -54,9 +55,10 @@ nav ul li a:hover{
     display: grid; 
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: 1fr; 
-    gap: 16px 24px; 
+    gap: 24px 24px; 
     align-items: center;
-    padding: 32px 32px;
+    /* padding: 20px 20px; */
+    justify-items: center;
     
 }
 
@@ -109,7 +111,7 @@ nav ul li a:hover{
 .money{
     display: flex;
     justify-content: space-around;
-    width: 380px;
+    width:100%;
     
 }
 .pag{
@@ -151,8 +153,31 @@ nav ul li a:hover{
     height: 60px;
     display: flex;
     align-items: center;
+    padding-left: 2%;
 }
 .input-field{
     display: flex;
-    height: 20px;
+    height: 23px;
+
+}
+.nav-form{
+    padding-right: 2%;
+
+}
+
+
+@media (max-width:750px) {
+    header{
+        flex-direction: column;
+        height: 120px;
+    }
+    .nav-form{
+        padding-bottom: 10px;
+
+     }
+    .loja{
+      
+      justify-items: center;
+    }
+    
 }
