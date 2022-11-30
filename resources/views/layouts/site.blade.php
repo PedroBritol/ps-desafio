@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('main.css')}}">
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css"/>
     <title>@yield('title')</title>
 </head>
 <body>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
     <header>
         
         <img src="{{ asset('imagens/icon.png') }}" alt="Logo" class="logoini">
         
         <nav>
             <ul>
-                
-                
                 <li><a href="{{route('site.index')}}"> <img src="{{ asset('imagens/menu.png') }}" alt="menu icon" class="menu">PÁGINA INICIAL</a></li>
-                
             </ul>
-            
         </nav>
         
         <form action="{{ route('site.index') }}" method="GET" class="nav-form">
